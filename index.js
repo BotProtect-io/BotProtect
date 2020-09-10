@@ -29,7 +29,7 @@ class BotProtectApi {
 		this.APIEndPoint += `publicKey=${this.clientPublicKey}&privateKey=${this.clientPrivateKey}&showFP=${this.showFP}&token=`;
 	}
 	
-	async verifyAsync(token) {
+	async verifyToken(token, cb) {
 		if(token.includes('|')) token = encodeURIComponent(token);
 		return new Promise(async (resolve, reject) => {
 			request.get({...this.options, ...{url: `${this.APIEndPoint}${token}`}}, (e, r, b) => {
@@ -54,9 +54,13 @@ class BotProtectApi {
 	}
 	
 	verify(token, cb) {
-		this.verifyAsync(token).then(cb).catch((e) => {
-			cb(e);
-		});
+		if(!cb) {
+			this.verifyToken(token).then(cb).catch((e) => {
+				cb(e);
+			});
+		} else {
+			return this.verifyToken(token);
+		}
 	}
 }
 

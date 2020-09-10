@@ -7,7 +7,7 @@ const BotProtect = new BotProtectApi({
 });
 
 (async () => {
-	let res = await BotProtect.verifyAsync('7797ebbb10b7ceeba5ba5e9b86dc555c|Wlbz_H0iPjqOvvUBrMJLDe8LRTCzmDZ0');
+	let res = await BotProtect.verify('7797ebbb10b7ceeba5ba5e9b86dc555c|Wlbz_H0iPjqOvvUBrMJLDe8LRTCzmDZ0');
 	console.log(res);
 })();
 

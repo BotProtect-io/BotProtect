@@ -28,7 +28,7 @@ To verify user token:
 #### ASYNC
 ```js
 (async () => {
-	let res = await BotProtect.verifyAsync('USER_TOKEN');
+	let res = await BotProtect.verify('USER_TOKEN');
 	console.log(res);
 })();
 ```
