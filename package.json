@@ -1,0 +1,26 @@
+{
+  "name": "botprotect",
+  "version": "1.0.0",
+  "description": "BotProtect API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BotProtect-io/BotProtect.git"
+  },
+  "keywords": [
+    "botprotect",
+    "botprotectapi"
+  ],
+  "author": "Mr.Bot, Ralph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BotProtect-io/BotProtect/issues"
+  },
+  "homepage": "https://github.com/BotProtect-io/BotProtect#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
