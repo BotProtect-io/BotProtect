@@ -14,7 +14,7 @@
     "botprotect",
     "botprotectapi"
   ],
-  "author": "Mr.Bot, Ralph",
+  "author": "botprotect (https://botprotect.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BotProtect-io/BotProtect/issues"
@@ -22,5 +22,9 @@
   "homepage": "https://github.com/BotProtect-io/BotProtect#readme",
   "dependencies": {
     "request": "^2.88.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
 }
