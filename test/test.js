@@ -1,8 +1,8 @@
 const { BotProtectApi } = require('../');
 
 const BotProtect = new BotProtectApi({
-	publicKey: 'W0TlRhKuMfUCcLaijQxqFF_ymSlFdgwc',
-	privateKey: '6fPb4vzIXsXkaCb8Nb82gam8nNDSXAxdnr6tEfpI9emYUgdZdlMnW1GE7dK4NYTt',
+	publicKey: '',
+	privateKey: '',
 	showFingerprint: true
 });
 
