@@ -55,4 +55,4 @@ BotProtect.verify('USER_TOKEN', (res) => {
 }
 ```
 
-Learn more on [our api page](https://beta.botprotect.io/documentation/api).
+Learn more on [our api page](https://beta.botprotect.io/dashboard/api).
