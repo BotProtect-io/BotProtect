@@ -5,12 +5,9 @@ declare module 'botprotect' {
 		showFingerprint: boolean
 	};
 
-	export type BotProtectResponseError = {
-		error: boolean,
-		detail: string,
-	}
-	
 	export type BotProtectResponse = {
+		error?: boolean,
+		detail?: string,
 		human: boolean,
 		clientIp: string,
 		isRdp: boolean,
@@ -23,7 +20,7 @@ declare module 'botprotect' {
 	export class BotProtectApi {
 		constructor(opts: Options);
 		
-		verifyToken(token: string) : Promise<BotProtectResponseError | BotProtectResponse>;
-		verify(token: string, cb?: any) : Promise<BotProtectResponseError | BotProtectResponse> | void;
+		verifyToken(token: string) : Promise<BotProtectResponse>;
+		verify(token: string, cb?: any) : Promise<BotProtectResponse> | void;
 	}
 }
